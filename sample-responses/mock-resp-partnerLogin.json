@@ -1,0 +1,132 @@
+{
+  "partnerLoginResponse": {
+    "header": {
+      "statusCode": "0000",
+      "statusDesc": "Success",
+      "refId": "89bf0adb9d294883a41216bef3b91234",
+      "tokenId": "single-plan-with-family"
+    },
+    "details": {
+      "indexId": "1",
+      "proxyId": "101A",
+      "plans": [
+        {
+          "planId": "1400-TDMACC-001",
+          "clientDivision": "Some client division from proxy ID lookup",
+          "cmsContractId": "Some CMS contractc ID from proxy ID lookup",
+          "masterGroup": "Some master group from proxy ID lookup",
+          "planType": "Some Plan Type from Proxy ID lookup",
+          "familyId": "Some Contract or Family ID aka HCID from proxy ID lookup",
+          "dependentId": "Some dependent ID from Proxy ID lookup",
+          "medicalSubGroupNumberLevel2": "Level 2 - Medical Subgroup Number from proxy ID lookup",
+          "cmsPlanBenefitPackageId": "CMS Plan Benefit Package (PBP) ID from proxy ID lookup",
+          "lobIndicator": "2",
+          "clientId": "16527",
+          "carrierId": "1400",
+          "primary": true,
+          "stCob": false,
+          "dateOfBirth": "1947-02-01",
+          "medicare": false,
+          "relationShipCode": "1",
+          "coverageEffectiveDate": "2004-01-01",
+          "coverageTerminationDate": "2039-12-31",
+          "isFuturePlan": false,
+          "maintenanceChoiceIndicator": true,
+          "maintenanceChoiceType": "R",
+          "eligibility": {
+            "eligible": true,
+            "enrolledAutoRefill": "2",
+            "enrolledAutoRenew": "2",
+            "statusAutoRefill": "1",
+            "statusAutoRenew": "1"
+          }
+        }
+      ],
+      "specialtyPharmacy": {
+        "specialtyEnrollmentStatus": true
+      },
+      "family": [
+        {
+          "indexId": "2",
+          "proxyId": "102",
+          "plans": [
+            {
+              "planId": "1400-TDMACC-001",
+              "clientDivision": "Some client division from proxy ID lookup",
+              "cmsContractId": "Some CMS contractc ID from proxy ID lookup",
+              "masterGroup": "Some master group from proxy ID lookup",
+              "planType": "Some Plan Type from Proxy ID lookup",
+              "familyId": "Some Contract or Family ID aka HCID from proxy ID lookup",
+              "dependentId": "Some dependent ID from Proxy ID lookup",
+              "medicalSubGroupNumberLevel2": "Level 2 - Medical Subgroup Number from proxy ID lookup",
+              "cmsPlanBenefitPackageId": "CMS Plan Benefit Package (PBP) ID from proxy ID lookup",
+              "lobIndicator": "2",
+              "clientId": "16527",
+              "carrierId": "1400",
+              "primary": true,
+              "stCob": false,
+              "dateOfBirth": "1948-02-01",
+              "medicare": false,
+              "relationShipCode": "2",
+              "coverageEffectiveDate": "2004-01-01",
+              "coverageTerminationDate": "2039-12-31",
+              "isFuturePlan": false,
+              "maintenanceChoiceIndicator": true,
+              "maintenanceChoiceType": "R",
+              "eligibility": {
+                "eligible": true,
+                "enrolledAutoRefill": "2",
+                "enrolledAutoRenew": "2",
+                "statusAutoRefill": "1",
+                "statusAutoRenew": "1"
+              }
+            }
+          ],
+          "specialtyPharmacy": {
+            "specialtyEnrollmentStatus": true
+          }
+        },
+        {
+          "indexId": "3",
+          "proxyId": "103",
+          "plans": [
+            {
+              "planId": "1400-TDMACC-001",
+              "clientDivision": "Some client division from proxy ID lookup",
+              "cmsContractId": "Some CMS contractc ID from proxy ID lookup",
+              "masterGroup": "Some master group from proxy ID lookup",
+              "planType": "Some Plan Type from Proxy ID lookup",
+              "familyId": "Some Contract or Family ID aka HCID from proxy ID lookup",
+              "dependentId": "Some dependent ID from Proxy ID lookup",
+              "medicalSubGroupNumberLevel2": "Level 2 - Medical Subgroup Number from proxy ID lookup",
+              "cmsPlanBenefitPackageId": "CMS Plan Benefit Package (PBP) ID from proxy ID lookup",
+              "lobIndicator": "2",
+              "clientId": "16527",
+              "carrierId": "1400",
+              "primary": true,
+              "stCob": false,
+              "dateOfBirth": "1975-02-01",
+              "medicare": false,
+              "relationShipCode": "3",
+              "coverageEffectiveDate": "2004-01-01",
+              "coverageTerminationDate": "2039-12-31",
+              "isFuturePlan": false,
+              "maintenanceChoiceIndicator": true,
+              "maintenanceChoiceType": "R",
+              "eligibility": {
+                "eligible": true,
+                "enrolledAutoRefill": "2",
+                "enrolledAutoRenew": "2",
+                "statusAutoRefill": "1",
+                "statusAutoRenew": "1"
+              }
+            }
+          ],
+          "specialtyPharmacy": {
+            "specialtyEnrollmentStatus": true
+          }
+        }
+      ]
+    }
+  }
+}

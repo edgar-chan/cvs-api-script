@@ -1,0 +1,35 @@
+{
+  "getclaimdetailResponse": {
+    "header": {
+      "statusCode": "0000",
+      "statusDesc": "Success",
+      "refID": "efdcc0c7dfbf410088f944756912bf99"
+    },
+    "details": {
+      "claimNumber": "200285889624003",
+      "claimDetailInfo": {
+        "billedAmount": "65667",
+        "amountAllowedByPlan": "63040.32",
+        "amountPaidByPlan": "61469.22",
+        "amountPaidByMember": "1575.1",
+        "fee": "4"
+      },
+      "pharmacy": {
+        "ncpdp": "3980958",
+        "npi": "1326029232",
+        "name": "CAREMARK PRESCRIPTION SRVC WBP",
+        "network": "RTLNW",
+        "address": {
+          "line1": "1 GREAT VALLEY BLVD",
+          "line2": "",
+          "city": "WILKES BARRE",
+          "state": "PA",
+          "zip": "18706",
+          "zipSuffixCode": "5324"
+        },
+        "phone": "5708202700",
+        "fax": "5708202512"
+      }
+    }
+  }
+}
