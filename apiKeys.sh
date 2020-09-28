@@ -9,9 +9,12 @@ elif [[ $ENV == "TEST" ]]; then
 else
     # local
     source .env.test
-    export LOGIN_HOSTNAME="http://partner-cvs-nonprod.cloverhealth.com:8090"
-    export AGP_HOSTNAME="http://partner-cvs-nonprod.cloverhealth.com:8090"
-    CURL_CERT_OPTIONS=""
+    # export LOGIN_HOSTNAME="http://partner-cvs-nonprod.cloverhealth.com:8090"
+    export LOGIN_HOSTNAME="https://localhost:8090"
+    # export AGP_HOSTNAME="http://partner-cvs-nonprod.cloverhealth.com:8090"
+    export AGP_HOSTNAME="https://localhost:8090"
+    # CURL_CERT_OPTIONS=""
+    CURL_CERT_OPTIONS=" --key /usr/local/etc/nginx/certs/server-rsa.key --cert /usr/local/etc/nginx/certs/partner-cvs-nonprod_cloverhealth_com.crt -k "
 fi
 
 if ! [ -z $MOCK ]; then
