@@ -2,36 +2,34 @@
 
 source apiKeys.sh
 
-curl -i "$CURL_HOSTNAME/login/partnerLogin" \
---key ~/Downloads/clover-cvs.key \
---cert ~/Downloads/clover.crt \
+curl -i -vvv "$LOGIN_HOSTNAME/login/partnerLogin" $CURL_CERT_OPTIONS \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "partnerLoginRequest": {
         "header": {
             "serviceContext": {
-                "apiVersion": "1.0",
-                "lineOfBusiness": "PBM",
+                "appName": "SDK_CLOVER",
                 "channelName": "WEB",
-                "responseFormat": "JSON",
-                "appName": "CMK_WEB"
+                "lineOfBusiness": "PBM",
+                "deviceID": "device12345",
+                "deviceToken": "device12345",
+                "deviceType": "DESKTOP",
+                "apiVersion": "5.0",
+                "responseFormat": "JSON"
             },
             "securityContext": {
-                "securityType": "apiKey",
-                "apiKey": "'"$CURL_API_KEY"'"
+                "apiKey": "'$LOGIN_API_KEY'",
+                "securityType": "apikey"
             }
         },
         "details": {
             "member": {
-                "firstName": "Will",
-                "lastName": "Audis",
+                "firstName": "RAG",
+                "lastName": "NAIR",    
                 "gender": "M",
-                "dateOfBirth": "1987-02-02",
-                "externalId": "SR185310101",
-                "clientCode": "BLNK"
-            },
-            "partnerOptionalInfo": {
-                "loggedInMemberProxyId": "101A"
+                "dateOfBirth": "1981-05-02",
+                "externalId": "835T91771",
+                "clientCode": "BLNK"                
             }
         }
     }

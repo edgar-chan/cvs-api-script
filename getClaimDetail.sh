@@ -2,32 +2,30 @@
 
 source apiKeys.sh
 
-curl -i "$CURL_HOSTNAME/AGP/api/client/claim/getclaimdetail" \
---key ~/Downloads/clover-cvs.key \
---cert ~/Downloads/clover.crt \
+curl -i -vv "$AGP_HOSTNAME/AGP/api/client/claim/getclaimdetail" \
 --header 'Content-Type: application/json' \
 --data-raw '{
   "getClaimsHistoryRequest": {
     "header": {
-      "serviceContext": {
+        "serviceContext": {
         "apiVersion": "1.0",
-        "lineOfBusiness": "PBM",
-        "appName": "CMK_WEB",
+        "lineOfBusiness": "",
+        "appName": " SDK_CLOVER",
         "channelName": "Web",
         "responseFormat": "JSON",
         "requesterId": "DIGITAL_SPECIALTY",
-        "tokenID": "single-plan-with-family",
+        "refID": "'$REF_ID'",
+        "tokenID": "'$TOKEN_ID'",
         "clientName": ""
       },
       "securityContext": {
         "securityType": "apiKey",
-        "apiKey": "'"$CURL_API_KEY"'"
+        "apiKey": "'$APG_API_KEY'"
       }
     },
     "details": {
-      "startDate": "",
-      "endDate": "",
-      "nonActionableRefillsOnly": false
+      "claimNumber" : "202104641030005",
+      "claimSeqNumber" : "999"
     }
   }
 }'
